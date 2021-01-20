@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+// 覆写el-btn
+.rebtn {
+    background: rgba($color: #f1184c, $alpha: 0.85);
+    color: #fff !important;
+    transition: all 0.3s linear;
+    &:hover {
+      transition: all 0.3s linear;
+      background: #f1184c;
+      color: #fff;
+    }
+    
+}
