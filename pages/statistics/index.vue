@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <el-card class="operation mb20">
+    <el-card class="operation mb20 animated bounceInRight">
       <el-tabs v-model="activeName" @tab-click="handleClick">
         <el-tab-pane
           v-for="(item, index) in tabsMenu"
@@ -13,7 +13,7 @@
       </el-tabs>
     </el-card>
 
-    <el-card class="result mb20">
+    <el-card class="result mb20 animated bounceInLeft">
       <h1>{{ tabsMenu[activeName].label }}结果</h1>
       <component :is="ResComp"></component>
     </el-card>

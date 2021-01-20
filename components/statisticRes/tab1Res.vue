@@ -1,5 +1,6 @@
 <template>
-  <el-table :data="tableData" border :row-class-name="tableRowClassName">
+  <div class="container">
+     <el-table :data="tableData" border :row-class-name="tableRowClassName">
     <el-table-column prop="date" label="数字" width="180" align="center">
     </el-table-column>
     <el-table-column prop="name" label="统计记录" align="center">
@@ -14,6 +15,8 @@
       </template>
     </el-table-column>
   </el-table>
+  </div>
+ 
 </template>
 
 <script lang="ts">
