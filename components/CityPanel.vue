@@ -3,7 +3,14 @@
     <div v-for="item in city" :key="item.name">
       <p class="classify">{{ item.name }}</p>
       <ul>
-        <li v-for="c in item.list" :key="c.name">{{ c.name }}</li>
+        <li
+          v-for="c in item.list"
+          :key="c.name"
+          @click="active=c.name"
+          :class="c.name == active ? 'active' : ''"
+        >
+          {{ c.name }}
+        </li>
       </ul>
     </div>
   </div>
@@ -16,11 +23,18 @@ import cityJson from "~/assets/json/city.js";
 
 export default Vue.extend({
   data() {
-    return {};
+    return {
+      active: "",
+    };
   },
   computed: {
     city() {
       return cityJson;
+    },
+  },
+  methods: {
+    searchCityRes(i: any) {
+      this.active = i;
     },
   },
 });
@@ -39,7 +53,8 @@ export default Vue.extend({
       background: #f1184c;
       color: white;
       font-weight: bold;
-      padding-left: 10px;
+      padding: 2px 0 2px 10px;
+      // padding-left: 10px;
     }
     ul {
       color: #666666;
@@ -62,5 +77,11 @@ export default Vue.extend({
       }
     }
   }
+}
+.active {
+  color: #000;
+  background: #f5f5f5;
+  border-left: 3px solid #f1184c !important;
+  transition: all 0.3s linear;
 }
 </style>

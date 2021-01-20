@@ -14,7 +14,7 @@
     </el-card>
 
     <el-card class="result mb20">
-      <h1>{{tabsMenu[activeName].label}}结果</h1>
+      <h1>{{ tabsMenu[activeName].label }}结果</h1>
       <component :is="ResComp"></component>
     </el-card>
   </div>

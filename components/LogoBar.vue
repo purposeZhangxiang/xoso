@@ -2,7 +2,6 @@
   <div class="container">
     <div class="web-info">
       <img src="https://cdn.xoso.com.vn/images/logo-xoso.svg" alt="xoso" />
-      <span>|2020-01-18</span>
     </div>
   </div>
 </template>
@@ -17,13 +16,9 @@ export default {};
   .web-info {
     width: 1100px;
     margin: 0 auto;
-    img{
-        vertical-align: middle;
-
+    img {
+      padding: 2px 0;
     }
-    span{
-    }
-    // background: green;
   }
 }
 </style>

@@ -26,9 +26,6 @@
 
         <el-menu-item :key="index" :index="item.router" v-else>
           {{ item.label }}
-          <!-- <nuxt-link :to="item.router" >
-            {{ item.label }}
-          </nuxt-link> -->
         </el-menu-item>
       </template>
     </el-menu>
