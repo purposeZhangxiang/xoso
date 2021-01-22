@@ -3,16 +3,25 @@
     padding: 0;
 }
 
-
+html,body{
+  width: 100%;
+  height: 100%;
+  
+}
+body>div{
+    font-size: 16px;
+}
 // 覆写el-btn
 .rebtn {
     background: rgba($color: #f1184c, $alpha: 0.85);
     color: #fff !important;
     transition: all 0.3s linear;
-    &:hover {
+    &:hover,&:focus {
       transition: all 0.3s linear;
       background: #f1184c;
       color: #fff;
     }
+    
+    // &:focus{}
     
 }

@@ -14,7 +14,9 @@ export default {};
 .container {
   width: 100%;
   .web-info {
-    width: 1100px;
+    // width: 1100px;
+    width: 10rem;
+    background: rosybrown;
     margin: 0 auto;
     img {
       padding: 2px 0;

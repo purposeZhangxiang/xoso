@@ -109,3 +109,11 @@ export default Vue.extend({
 }
 </style>
 
+<style lang="scss">
+.calendar-box{
+  .vc-container{
+    border-radius: 5px;
+  }
+}
+</style>
+
