@@ -8,6 +8,7 @@ html,body{
   height: 100%;
   
 }
+
 body>div{
     font-size: 16px;
 }
@@ -21,7 +22,42 @@ body>div{
       background: #f1184c;
       color: #fff;
     }
-    
     // &:focus{}
-    
+}
+
+
+
+// 移动端
+@media screen and (max-width:414px ){
+  .web-info{
+    width: 100% !important;
+  }
+  .main{
+    width: 100% !important;
+    // background: gold;
+  }
+  .left{
+    .container{
+      .city{
+        display: none;
+      }
+      .table{
+        flex-wrap: wrap;
+        justify-content: center;
+        .t1box{
+          width: 100% !important;
+        }
+        .t2box{
+          margin: 10px 0 !important;
+        }
+      }
+    }
+  }
+  .right{
+    display: none;
+  }
+
+  .foot{
+    width: 100% !important;
+  }
 }

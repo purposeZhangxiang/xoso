@@ -64,7 +64,7 @@ export default Vue.extend({
 .container {
   .header {
     width: 100%;
-    background: #fff;
+    // background: #fff;
   }
   .bread {
     width: 1100px;

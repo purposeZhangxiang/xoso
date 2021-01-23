@@ -50,7 +50,7 @@ export default Vue.extend({
         },
         { label: "统计分析", router: "/statistics" },
         { label: "开奖时间表", router: "/opentime" },
-        { label: "外部链接", router: "" },
+        { label: "外部链接", router: "/news" },
       ],
     };
   },
@@ -64,10 +64,8 @@ export default Vue.extend({
 <style lang="scss" scoped>
 .container {
   width: 100%;
-  //   background: #f36943;
   background: #f1184c;
   margin-bottom: 10px;
-  
 }
 .el-menu-demo {
   max-width: 1100px;
