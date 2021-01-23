@@ -1,15 +1,15 @@
 <template>
-  <div class="container">
-    <div class="city">
+  <section class="container">
+    <aside class="city">
       <CityPanel></CityPanel>
-    </div>
+    </aside>
     <div class="result">
       <LotteryCard :tableData="tableData"></LotteryCard>
       <LotteryCard :tableData="tableData"></LotteryCard>
       <LotteryCard :tableData="tableData"></LotteryCard>
       <LotteryCard :tableData="tableData"></LotteryCard>
     </div>
-  </div>
+  </section>
 </template>
 
 <script lang="ts">
@@ -73,8 +73,6 @@ export default Vue.extend({
   }
   .result {
     flex: 1;
-    // width: 600px;
-
     padding: 0 10px;
     box-sizing: border-box;
   }

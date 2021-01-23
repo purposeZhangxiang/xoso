@@ -1,9 +1,11 @@
 <template>
-  <div class="container">
+  <section class="container">
     <div class="web-info">
-      <img src="https://cdn.xoso.com.vn/images/logo-xoso.svg" alt="xoso" />
+      <h1>
+        <img src="https://cdn.xoso.com.vn/images/logo-xoso.svg" alt="xoso" />
+      </h1>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

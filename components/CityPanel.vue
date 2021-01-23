@@ -1,19 +1,19 @@
 <template>
-  <div class="container">
+  <section class="container_city">
     <div v-for="item in city" :key="item.name">
       <p class="classify">{{ item.name }}</p>
       <ul>
         <li
           v-for="c in item.list"
           :key="c.name"
-          @click="active=c.name"
+          @click="active = c.name"
           :class="c.name == active ? 'active' : ''"
         >
           {{ c.name }}
         </li>
       </ul>
     </div>
-  </div>
+  </section>
 </template>
 
 <script lang="ts">
@@ -43,7 +43,7 @@ export default Vue.extend({
 
 
 <style lang="scss" scoped>
-.container {
+.container_city {
   border: 1px solid #cdd5df;
   border-radius: 6px;
   overflow: hidden;
@@ -54,7 +54,6 @@ export default Vue.extend({
       color: white;
       font-weight: bold;
       padding: 2px 0 2px 10px;
-      // padding-left: 10px;
     }
     ul {
       color: #666666;

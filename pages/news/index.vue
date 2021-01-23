@@ -9,7 +9,7 @@
 
     <el-card class="box-card">
       <h2>彩票咨询各种标题</h2>
-      <div class="context">
+      <article class="context">
         <div class="left">
           <el-image
             src="https://cube.elemecdn.com/6/94/4d3ea53c084bad6931a56d5158a48jpeg.jpeg"
@@ -18,12 +18,12 @@
         <div class="right">
           领先的彩票网站对KQXSMB进行了评论，提供了2021年1月21日今天的射击后的彩票结果的完整详细信息
         </div>
-      </div>
+      </article>
     </el-card>
 
-    <el-card class="box-card">
+     <el-card class="box-card">
       <h2>彩票咨询各种标题</h2>
-      <div class="context">
+      <article class="context">
         <div class="left">
           <el-image
             src="https://cube.elemecdn.com/6/94/4d3ea53c084bad6931a56d5158a48jpeg.jpeg"
@@ -32,8 +32,10 @@
         <div class="right">
           领先的彩票网站对KQXSMB进行了评论，提供了2021年1月21日今天的射击后的彩票结果的完整详细信息
         </div>
-      </div>
+      </article>
     </el-card>
+
+  
   </div>
 </template>
 

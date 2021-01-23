@@ -1,6 +1,6 @@
 <template>
-  <div class="container">
-    <div class="city">
+  <section class="container">
+    <header class="city">
       <el-form>
         <el-radio-group v-model="radio">
           <el-radio
@@ -12,9 +12,11 @@
           >
         </el-radio-group>
       </el-form>
-    </div>
-    <LotteryCard :tableData="tableData"></LotteryCard>
-  </div>
+    </header>
+    <article>
+      <LotteryCard :tableData="tableData"></LotteryCard>
+    </article>
+  </section>
 </template>
 
 <script lang="ts">

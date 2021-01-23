@@ -1,6 +1,6 @@
 <template>
-  <div class="container">
-    <div class="header">追踪结果</div>
+  <aside class="container">
+    <header class="header">追踪结果</header>
     <el-form
       class="form"
       :model="form"
@@ -44,7 +44,7 @@
         >
       </el-form-item>
     </el-form>
-  </div>
+  </aside>
 </template>
 
 <script lang="ts">

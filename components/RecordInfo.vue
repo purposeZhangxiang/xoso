@@ -3,14 +3,18 @@
     <div class="foot">
       <div class="f_left">
         <p class="banquan">
-          Copyright © 2007 - 2021 Xoso.com.vn, All Rights Reserved
+          <strong>
+            <font>
+              Copyright © 2007 - 2021 Xoso.com.vn, All Rights Reserved
+            </font>
+          </strong>
         </p>
         <p class="suoyouzhe"></p>
-        <p>地址地址 地址</p>
-        <p>email：xoso@ctc.com.vn</p>
+        <address>地址地址 地址</address>
+        <p><font>email：xoso@ctc.com.vn</font></p>
       </div>
       <div class="f_right">
-          <!-- <p>广告合作</p> -->
+        <!-- <p>广告合作</p> -->
       </div>
     </div>
   </div>
@@ -30,16 +34,16 @@ export default {};
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    .f_left{
-        p{
-            line-height: 30px;
-        }
-        .banquan{
-            font-weight: bold;
-        }
+    .f_left {
+      p {
+        line-height: 30px;
+      }
+      .banquan {
+        font-weight: bold;
+      }
     }
-    .f_right{
-        padding-right: 30px;
+    .f_right {
+      padding-right: 30px;
     }
   }
 }

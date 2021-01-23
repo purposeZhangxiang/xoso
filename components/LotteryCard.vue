@@ -1,10 +1,12 @@
 <template>
-  <div class="container wow fadeIn">
+  <article class="container wow fadeIn">
     <el-card class="box-card">
-      <div class="header">
-        <p>{{tableData.large_species_code}}彩票结果 <span>2021年01月06日</span></p>
-      </div>
-      <div class="table">
+      <header class="header">
+        <p>
+          {{ tableData.large_species_code }}彩票结果 <span>2021年01月06日</span>
+        </p>
+      </header>
+      <section class="table">
         <!-- left table -->
         <div class="t1box">
           <el-table :data="tableData.t1" border>
@@ -15,7 +17,7 @@
               align="center"
             >
               <template slot="header">
-                <div>奖项</div>
+                <span>奖项</span>
               </template>
               <!-- table content -->
               <template slot-scope="scope">
@@ -34,7 +36,7 @@
           <el-table :data="tableData.t2" border>
             <el-table-column prop="date" label="奖项" align="center">
               <template slot="header">
-                <div>头</div>
+                <p>头</p>
               </template>
 
               <template slot-scope="scope">
@@ -43,14 +45,14 @@
             </el-table-column>
             <el-table-column prop="name" label="开奖号" align="center">
               <template slot="header">
-                <div>尾</div>
+                <p>尾</p>
               </template>
             </el-table-column>
           </el-table>
         </div>
-      </div>
+      </section>
     </el-card>
-  </div>
+  </article>
 </template>
 
 <script lang="ts">

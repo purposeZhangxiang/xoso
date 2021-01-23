@@ -26,7 +26,7 @@ export default {
   plugins: [
     '@/plugins/element-ui',
     { src: '@/plugins/calendar', ssr: false },
-    { src: '@/plugins/rem',ssr:false}
+    // { src: '@/plugins/rem',ssr:false}
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <nav class="container">
     <el-menu
       :default-active="activeIndex"
       class="el-menu-demo"
@@ -29,7 +29,7 @@
         </el-menu-item>
       </template>
     </el-menu>
-  </div>
+  </nav>
 </template>
 
 <script lang="ts">
