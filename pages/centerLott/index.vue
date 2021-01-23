@@ -81,9 +81,9 @@ export default Vue.extend({
 
 
 <style lang="scss" scoped>
-// .city {
-//   margin-bottom: 20px;
-// }
+.city {
+  margin-bottom: 20px;
+}
 .radioWidth {
   width: 20%;
   margin: 5px 0;

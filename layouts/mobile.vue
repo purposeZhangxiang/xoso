@@ -57,8 +57,6 @@ header {
   .right {
     font-size: 30px;
     i {
-      // border: 1px solid #f7dc66;
-      // background: #f7dc66;
       color: #fff;
       border-radius: 3px;
     }

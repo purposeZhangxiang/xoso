@@ -1,8 +1,13 @@
 <template>
+   
   <component :is="layout"></component>
+
 </template>
 
 <script lang="ts">
+// <pc v-if="layout=='PC'" />
+  //  <mobile v-else> 
+//
 import Vue from "vue";
 export default Vue.extend({
   data() {
@@ -19,12 +24,13 @@ export default Vue.extend({
   },
   mounted() {
     if (this.isMobile()) {
-      console.log(this.$store.state.layout);
       // console.log(this.$store.commit('changeLayout', ));
       this.$store.commit("changeLayout", "Mobile");
+      console.log(this.$store.state.layout);
       return;
     }
     this.$store.commit("changeLayout", "PC");
+    console.log(this.$store.state.layout);
   },
   methods: {
     isMobile() {

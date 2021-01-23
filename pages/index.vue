@@ -1,8 +1,8 @@
 <template>
   <section :class="['container', layout == 'Mobile' ? 'mobile' : '']">
-    <aside class="city">
-      <CityPanel></CityPanel>
-    </aside>
+      <aside class="city" >
+        <CityPanel></CityPanel>
+      </aside>
     <div class="result">
       <LotteryCard :tableData="tableData"></LotteryCard>
       <LotteryCard :tableData="tableData"></LotteryCard>

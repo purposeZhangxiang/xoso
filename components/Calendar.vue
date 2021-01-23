@@ -30,10 +30,10 @@ export default Vue.extend({
   },
   computed: {},
   watch: {},
-  created() {
+
+  mounted() {
     this.getAttrs();
   },
-  mounted() {},
   methods: {
     onDayClick(day: any) {
       console.log(day);
@@ -110,8 +110,8 @@ export default Vue.extend({
 </style>
 
 <style lang="scss">
-.calendar-box{
-  .vc-container{
+.calendar-box {
+  .vc-container {
     border-radius: 5px;
   }
 }

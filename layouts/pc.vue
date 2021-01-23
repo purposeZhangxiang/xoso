@@ -40,7 +40,6 @@ export default Vue.extend({
       offsetTop: 51,
     };
   },
-  created() {},
   mounted() {
     window.addEventListener("scroll", (e) => {
       let scrollTop =

@@ -1,5 +1,5 @@
 <template>
-  <article class="container wow fadeIn">
+  <article  :class="['container','wow','fadeIn', layout == 'Mobile' ? 'mobile' : '']">
     <el-card class="box-card">
       <header class="header">
         <p>
@@ -57,11 +57,13 @@
 
 <script lang="ts">
 import Vue from "vue";
+import layoutMixin from "~/plugins/mixin";
 if (process.browser) {
   // 在这里根据环境引入wow.js
   var { WOW } = require("wowjs");
 }
 export default Vue.extend({
+  mixins:[layoutMixin],
   props: {
     tableData: {
       type: Object,
