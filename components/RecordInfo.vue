@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div :class="['container', layout == 'Mobile' ? 'mobile' : '']">
     <div class="foot">
       <div class="f_left">
         <p class="banquan">
@@ -21,7 +21,10 @@
 </template>
 
 <script>
-export default {};
+import layoutMixin from "~/plugins/mixin";
+export default {
+  mixins: [layoutMixin],
+};
 </script>
 
 <style lang="scss" scoped>
@@ -45,6 +48,13 @@ export default {};
     .f_right {
       padding-right: 30px;
     }
+  }
+}
+
+.mobile {
+  padding-left: 10px;
+  .foot {
+    width: 100%;
   }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <section :class="['container', layout == 'Mobile' ? 'mobile' : '']">
     <aside class="city">
       <CityPanel></CityPanel>
     </aside>
@@ -14,7 +14,9 @@
 
 <script lang="ts">
 import Vue from "vue";
+import layoutMixin from "~/plugins/mixin";
 export default Vue.extend({
+  mixins: [layoutMixin],
   data() {
     return {
       tableData: {
@@ -75,6 +77,12 @@ export default Vue.extend({
     flex: 1;
     padding: 0 10px;
     box-sizing: border-box;
+  }
+}
+
+.mobile {
+  .city {
+    display: none;
   }
 }
 </style>

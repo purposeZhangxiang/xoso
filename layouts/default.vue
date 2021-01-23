@@ -6,9 +6,12 @@
 import Vue from "vue";
 export default Vue.extend({
   data() {
-    return {
-      layout: "PC",
-    };
+    return {};
+  },
+  computed: {
+    layout() {
+      return this.$store.state.layout;
+    },
   },
   components: {
     Mobile: () => import("./mobile.vue"),
@@ -16,10 +19,12 @@ export default Vue.extend({
   },
   mounted() {
     if (this.isMobile()) {
-      this.layout = "Mobile";
+      console.log(this.$store.state.layout);
+      // console.log(this.$store.commit('changeLayout', ));
+      this.$store.commit("changeLayout", "Mobile");
       return;
     }
-    this.layout = "PC";
+    this.$store.commit("changeLayout", "PC");
   },
   methods: {
     isMobile() {

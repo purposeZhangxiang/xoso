@@ -111,4 +111,18 @@ export default Vue.extend({
     }
   }
 }
+
+.mobile {
+  .table {
+    flex-wrap: wrap;
+    justify-content: center;
+    .t1box {
+      width: 100% !important;
+    }
+    .t2box {
+      width: 100%;
+      margin-left: 0 !important;
+    }
+  }
+}
 </style>

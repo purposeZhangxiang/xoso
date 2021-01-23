@@ -17,7 +17,6 @@ export default {};
   width: 100%;
   .web-info {
     width: 1100px;
-    // background: rosybrown;
     margin: 0 auto;
     img {
       padding: 2px 0;
