@@ -45,6 +45,7 @@ export default Vue.extend({
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background: #f1184c;
   div {
     margin: 0 20px;
