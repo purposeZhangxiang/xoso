@@ -5,7 +5,7 @@
         <p class="banquan">
           <strong>
             <font>
-              Copyright © 2007 - 2021 Xoso.com.vn, All Rights Reserved
+              Copyright © 2007 - 2021 Xoso.com.vn,
             </font>
           </strong>
         </p>
@@ -52,9 +52,12 @@ export default {
 }
 
 .mobile {
-  padding-left: 10px;
   .foot {
     width: 100%;
+    font-size: 12px;
+    .f_left{
+      padding-left: 20px;
+    }
   }
 }
 </style>

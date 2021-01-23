@@ -1,13 +1,16 @@
 <template>
-   
-  <component :is="layout"></component>
-
+  <PC v-if="layout == 'PC'" />
+  <Mobile v-else />
 </template>
 
 <script lang="ts">
 // <pc v-if="layout=='PC'" />
-  //  <mobile v-else> 
+//  <mobile v-else>
 //
+//<component :is="layout"></component>
+
+import Mobile from "./mobile.vue"
+import PC from "./pc.vue"
 import Vue from "vue";
 export default Vue.extend({
   data() {
@@ -19,8 +22,8 @@ export default Vue.extend({
     },
   },
   components: {
-    Mobile: () => import("./mobile.vue"),
-    PC: () => import("./pc.vue"),
+    Mobile,
+    PC
   },
   mounted() {
     if (this.isMobile()) {
